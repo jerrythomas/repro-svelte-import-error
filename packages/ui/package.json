@@ -1,0 +1,32 @@
+{
+  "name": "@kavach/ui",
+  "version": "1.0.0-next.27",
+  "description": "repro for import error",
+  "author": "Jerry Thomas <me@jerrythomas.name>",
+  "license": "MIT",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jerrythomas/kavach",
+    "directory": "packages/ui"
+  },
+  "prettier": "@jerrythomas/prettier-config",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepublishOnly": "tsc"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./src/index.js",
+      "svelte": "./src/index.js"
+    }
+  },
+  "dependencies": {
+    "@rokkit/ui": "1.0.0-next.113"
+  }
+}

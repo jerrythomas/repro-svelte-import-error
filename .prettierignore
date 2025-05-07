@@ -1,0 +1,9 @@
+.svelte-kit/**/*
+static/**
+build/**
+node_modules/**
+coverage/**
+.turbo/**
+.vercel/**
+dist/**
+pnpm-lock.yaml
